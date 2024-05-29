@@ -1,0 +1,825 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+}
+.home-page{
+    background: url(bg1.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.sec-home{
+    background: url(bg2.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+:root{
+    --bg-color: url(bg2.png);
+    --sec-bg-color: url(bg2.png);
+}
+span{
+    color: white;
+}
+.logo{
+    display: flex;
+}
+.logo a{
+    font-size: 2.5rem;
+    background: linear-gradient(red,blue,white);
+   padding: .1rem .4rem;
+    border-radius: 50%;
+}
+.logo h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(10px);
+    padding: 1rem 7%;
+    position: fixed;
+    border-radius: 9px;
+}
+.nav a{
+    display: inline-flex;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-left: 40px;
+    transition: .5s;
+
+}
+.nav a:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(10px 20px 1px lightskyblue);
+}
+.home{
+    height: 100vh;
+    background: url(bg1.png);
+    background-size: cover;
+    background-position: center;
+}
+.home-container{
+   
+    padding: 9rem 2%;
+
+}
+.img{
+    background: url(shinehtet.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 30pc;
+    height: 30pc;
+    border-radius: 5%;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+}
+.home-text{
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 50%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+.info{
+    margin: 10px;
+}
+.home-text h1{
+    font-size: 4rem;
+}
+
+.frame{
+    position: relative;
+    overflow: hidden;
+}
+.center{
+    position: relative;
+    top:0;
+    
+
+   
+}
+.car{
+    position: relative;
+    align-items: center;
+    line-height: 1.5;
+    height: 3rem;
+    font-size: 2rem;
+
+.change_outer{
+    position: absolute;
+    width: 100%;
+
+
+.change_inner{
+    position: relative;
+    animation: rotate 8s  ease-in-out infinite;
+}
+
+ .element{
+    margin-left: 10px;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px darkblue;
+    
+} 
+}
+} 
+
+@keyframes rotate{
+    0%,25%{
+        transform: translateY(-10px) ;
+    }
+    30%,45%{
+        transform: translateY(-65px);
+    }
+    50%,65%{
+        transform: translateY(-120px);
+    }
+    70%,85%{
+        transform: translateY(-180px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+ /* frame animation end */
+.icon{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon a{
+    width: 3.4pc;
+    height: 3.4pc;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid white;
+    margin: 3rem auto;
+    padding: .6rem 2%;
+    font-size: 2rem;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.8);
+    transition: .6s;
+}
+.icon a:hover{
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.8);
+}
+/* design section */
+.design{
+    background: var(--sec-bg-color);
+    background-size: cover;
+    background-position: center;
+    height: 300vh;
+}
+.design h1{
+    padding: 5rem 26%;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.box{
+    padding: 0 15%;
+}
+.box img{
+    
+    background-position: center;
+    background-size: cover;
+    width: 18rem;
+    height: 22rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+    
+}
+.box img:hover{
+    transform: scale(1.1);
+}
+.design-layer h3{
+    font-size: 2rem;
+    padding: .1rem 5%;
+    text-transform: uppercase;
+    text-align: center;
+}
+.box a{
+    display: flex;
+   padding: 1rem 26%;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 580;
+   background: white;
+    border-radius: 9px;
+    margin: 3px;
+    transition: .6s;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
+   
+}
+.box a:hover{
+    transform: scale(1.1);
+    
+}
+.design-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem 4%;
+}
+/* package section */
+.package{
+    background: url(bg2.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.package h1{
+    font-size: 3rem;
+    padding: 5rem 38%;
+}
+.package-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 2rem 1%;
+
+}
+.package .box{
+    padding: .1rem 10%;
+    text-align: center;
+}
+.package .box h2{
+    font-size: 2em;
+    padding: .5rem 10%;
+}
+.package .box p{
+   padding: .2rem 8%;
+   font-size: 1.3em;
+   font-weight: 550;
+}
+.package .box h3{
+    font-size: 1.5em;
+    color: lightskyblue;
+
+}
+.vectorpic{
+    background: url(bg2.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.vectorpic h1{
+    padding: 5rem 30%;
+    font-size: 3rem;
+}
+.vectorpac{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+.contact-info{
+    padding: 2rem 0;
+    
+}
+.contact .call{
+    margin: 10px;
+    font-size: 2rem;
+}
+.contact{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.contact button{
+    padding: 1rem 2rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+    margin: 15px;
+}
+.contact .iconI{
+   
+   font-size: 3rem;
+  
+   
+}
+.contact button:hover{
+    transform: scale(1.1);
+}
+/* vectorr section */
+.vector{
+    background: var(--bg-color);
+    background-size: cover;
+    background-position: center;
+    height: 170vh;
+}
+.vector h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 5rem 21%;
+}
+.vector-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0 2%;
+}
+.vector-container .box{
+    margin: 5px;
+}
+.vector-icon{
+    display: flex;
+    font-size: 1.7rem;
+    width: 100%;
+    gap: 2.8rem;
+}
+/* delusion */
+.delusion{
+    background: url(bg2.png);
+    background-size: cover;
+    background-position: center;
+    height: 170vh;
+}
+.delusion h1{
+    padding: 5rem 28%;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.delusion-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0 2%;
+
+}
+/* god section */
+.god{
+    background: url(bg2.png);
+    background-size: cover;
+    background-position: center;
+    height: 110vh;
+}
+.god h1{
+    padding: 5rem 33%;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+/* ice */
+.Ice{
+    background: url(bg2.png);
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+.Ice h1{
+    padding: 5rem 28%;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.Ice .delusion-container{
+    height: 65vh;
+}
+/* kendrick section */
+.kendrick {
+    background: var(--sec-bg-color);
+    background-size: cover;
+    background-position: center;
+    height: 110vh;
+}
+.kendrick h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 5rem 21.5%;
+}
+.button{
+   padding: 1rem 40%;
+   
+}
+.button a{
+    display: flex;
+    text-transform: capitalize;
+    align-items: center;
+    background-color: darkblue;
+    padding: 1rem 3%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.4);
+    transition: .6s;
+}
+.button a:hover{
+    transform: scale(1.1);
+}
+/* mecha */
+.mecha{
+    background: var(--bg-color);
+    background-size: cover;
+    background-position: center;
+    height: 110vh;
+}
+.mecha h1{
+    padding: 5rem 22%;
+    font-size: 3rem ;
+    text-transform: uppercase;
+}
+/* skull section */
+.skull{
+    background: var(--bg-color);
+    background-size: cover;
+    background-position: center;
+    height: 170vh;
+}
+.skull h1{
+    padding: 5rem 32%;
+    font-size: 3rem ;
+    text-transform: uppercase;
+}
+/* logo collection */
+.logoio{
+    background: url(bg2.png);
+    background-size: cover;
+    background-position: center;
+    height: 220vh;
+}
+.logoio h1{
+    padding: 5rem 32%;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+/* footer section */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8%;
+    background-color: black;
+    font-size: 2.2rem;
+}
+.footer a{
+    background: lightskyblue;
+    border-radius: 8px;
+    padding: .2rem .6%;
+    transition: .5s;
+}
+.footer a:hover{
+    transform: scale(1.1);
+}
+/* media */
+@media(max-width: 1200px){
+    html{
+        font-size: 85%;
+    }
+}
+@media(max-width: 995px){
+    html{
+        font-size: 65%;
+    }
+    header{
+        padding: 1rem 3%;
+    }
+    section{
+        padding: 2rem 1% 1rem;
+    }
+    @keyframes rotate{
+        0%,25%{
+            transform: translateY(-6px) ;
+        }
+        30%,45%{
+            transform: translateY(-50px);
+        }
+        50%,65%{
+            transform: translateY(-95px);
+        }
+        70%,85%{
+            transform: translateY(-140px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+}
+        .box{
+            padding: .1rem 20%;
+        }
+    .icon a{
+        padding: .6rem 2%;
+        font-size: 3rem;
+    }
+    .design h1{
+        padding: 5rem 25%;
+    }
+    .package h1{
+        padding: 5rem 37%;
+    }
+    .package .box h2{
+        padding: .9rem 1%;
+        
+    }
+    .vectorpic h1{
+        padding: 5rem 28%;
+    }
+    .vector h1{
+        padding: 5rem 19%;
+    }
+    .button a{
+        padding: 1rem 15%;
+    }
+    .delusion h1{
+        padding: 5rem 27%;
+    }
+    .god h1{
+        padding: 5rem 33%;
+    }
+    .Ice h1{
+        padding: 5rem 27%;
+    }
+    .mecha h1{
+        padding: 5rem 20%;
+    }
+    .kendrick h1{
+        padding: 5rem 20%;
+    
+    }
+    .skull h1{
+        padding: 5rem 32%;
+    
+    }
+    .logoio h1{
+        padding: 5rem 31%;
+    
+    } 
+        
+    
+}
+@media(max-width: 775px){
+    html{
+        font-size: 60%;
+    }
+    .home-text{
+        width: 60%;
+    }
+    header{
+        padding: 2rem 1%;
+    }
+    section{
+        padding: 2rem 1% 1rem;
+    }
+    
+    @keyframes rotate{
+        
+
+        0%,25%{
+            transform: translateY(-6px) ;
+        }
+        30%,45%{
+            transform: translateY(-40px);
+        }
+        50%,65%{
+            transform: translateY(-75px);
+        }
+        70%,85%{
+            transform: translateY(-110px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+}
+    .box{
+        padding: .1rem 15%;
+    }
+    .icon a{
+        padding: 1.1rem 2%;
+        font-size: 3rem;
+    }
+    .design h1{
+        padding: 5rem 23%;
+    }
+    .design .box {
+        padding: 1rem 12.5%;
+    }
+    .package h1{
+        padding: 5rem 36%;
+    }
+    .package .box h2{
+        padding: .9rem 1%;
+        
+    }
+    .vectorpic h1{
+        padding: 5rem 27%;
+    }
+    .vector h1{
+        padding: 5rem 18%;
+    }
+    .button a{
+        padding: 1rem 8%;
+    }
+    .delusion h1{
+        padding: 5rem 27%;
+    }
+    .god h1{
+        padding: 5rem 32%;
+    }
+    .Ice h1{
+        padding: 5rem 26%;
+    }
+    .mecha h1{
+        padding: 5rem 19%;
+    }
+    .kendrick h1{
+        padding: 5rem 19%;
+    
+    }
+    .skull h1{
+        padding: 5rem 30%;
+    
+    }
+    .logoio h1{
+        padding: 5rem 31%;
+    
+    } 
+}
+@media(max-width :325px ){
+    html{
+        font-size: 53%;
+    }
+    
+    header .nav{
+        display: none;
+
+        
+    }
+
+      
+    @keyframes rotate{
+        
+
+        0%,25%{
+            transform: translateY(-5px) ;
+        }
+        30%,45%{
+            transform: translateY(-35px);
+        }
+        50%,65%{
+            transform: translateY(-65px);
+        }
+        70%,85%{
+            transform: translateY(-95px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+}
+   .home-text{
+    width: 100%;
+    backdrop-filter: blur(25px);
+    
+   }
+   .home-container{
+    padding: 15rem 1%;
+   
+   }
+    section{
+        padding: 2rem 2%;
+    }
+    .design{
+        height: 570vh;
+    }
+    .design-container{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .design h1{
+        font-size: 2.6rem;
+        padding: 1rem 1%;
+    }
+   .design-layer{
+    padding: 2rem 6rem ;
+   }
+   .package{
+    height: 166vh;
+   }
+   .package h1{
+    padding: 1rem 21%;
+   }
+   .package-container{
+    grid-template-columns: repeat(1,1fr);
+    font-size: 1.3rem ;
+    gap: 15px;
+    
+   }
+   .vectorpic h1{
+    padding: 1rem 2%;
+   }
+   .vectorpac{
+    display: block;
+    margin: 3rem;
+   }
+   .contact-info h2{
+    padding: 2rem 10%;
+   }
+   .contact-info{
+    padding: 4rem 14%;
+   }
+   .vector{
+    height: 100%;
+   }
+   .vector h1{
+    font-size: 2.5rem;
+    text-align: center;
+   }
+   .vector-container{
+    grid-template-columns: repeat(1,1fr);
+
+    
+   }
+   .vector-container .box img{
+    width: 100%;
+    height: 90%;
+   }
+   .button{
+    padding: 3rem 20%;
+   }
+   .button a{
+    padding: 1rem 4rem;
+   }
+   .delusion{
+    height: 100%;
+   }
+   .delusion h1{
+    font-size: 2.5rem;
+    text-align: center;
+   }
+   .delusion-container{
+    grid-template-columns: repeat(1,1fr);
+
+    
+   }
+   .delusion-container .box img{
+    width: 100%;
+    height: 90%;
+   }
+   .god{
+    height: 100%;
+   }
+   .god h1{
+    font-size: 2.5rem;
+    text-align: center;
+   }
+   
+   .god .box img{
+    width: 100%;
+    height: 90%;
+   }
+   .Ice .delusion-container{
+    height: 100%;
+   }
+   .Ice h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.mecha{
+    height: 100%;
+   }
+   .mecha h1{
+    font-size: 2.5rem;
+    text-align: center;
+   }
+   .kendrick{
+    height: 100%;
+   }
+   .kendrick h1{
+    font-size: 2.5rem;
+    text-align: center;
+   }
+   .skull{
+    height: 100%;
+   }
+   .skull h1{
+    font-size: 2.5rem;
+    text-align: center;
+   }
+   .logoio{
+    height: 100%;
+   }
+   .logoio h1{
+    font-size: 2.5rem;
+    text-align: center;
+   }
+}
